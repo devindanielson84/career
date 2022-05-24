@@ -1,0 +1,45 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: sidebar; }
+.item3 { grid-area: content; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'sidebar sidebar sidebar content content content'
+    'sidebar sidebar sidebar footer footer footer';
+  grid-gap: 50px;
+  background-image: url();
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgb(102, 102, 102);
+  color: whitesmoke;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.text{
+  color: black;
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+  padding: 15px;
+  background-color: silver;
+  border: 10px solid black;
+  border-radius: 0%;
+}
+.items{
+  color: black;
+  text-decoration: none;
+  margin: 40px;
+  padding: 15px;
+  background-color: silver;
+  border: 5px solid black;
+  border-radius: 45%;
+  text-align: center;
+}
+a:hover{
+  color: white;
+}
